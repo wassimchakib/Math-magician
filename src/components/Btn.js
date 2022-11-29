@@ -1,25 +1,27 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prefer-stateless-function */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Btn extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: props.value,
-      className: props.className,
-    };
-  }
-
   render() {
+    const { value, className } = this.props;
     return (
-      <button type="button" className={`${this.state.className}`}>
-        {this.state.value}
+      <button type="button" className={`${className}`}>
+        {value}
       </button>
     );
   }
 }
+
+Btn.defaultProps = {
+  value: 0,
+  className: '',
+};
+
+Btn.propTypes = {
+  value: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export default Btn;

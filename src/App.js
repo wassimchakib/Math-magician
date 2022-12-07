@@ -1,5 +1,6 @@
 import './App.css';
 import {
+  BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
@@ -9,12 +10,14 @@ import Quote from './components/Quote';
 
 const App = () => (
   <div className="App">
-    <Routes>
-      <Route path="/calculator" element={<Calculator />} />
-      <Route path="/quote" element={<Quote />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
   </div>
 );
 

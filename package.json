@@ -1,7 +1,7 @@
 {
   "name": "math-magicians",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://wassimchakib.github.io/Math-magician/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "deploy": "gh-pages -d build",

@@ -29,7 +29,7 @@ class BtnContainer extends Component {
   render() {
     const { handleClick } = this.props;
     return (
-      <div className="calculator__btns">
+      <>
         {this.obj.map((object) => (
           <button
             key={object.value}
@@ -40,7 +40,7 @@ class BtnContainer extends Component {
             {object.value}
           </button>
         ))}
-      </div>
+      </>
     );
   }
 }

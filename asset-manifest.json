@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Math-magician/static/css/main.fa83fc33.css",
-    "main.js": "/Math-magician/static/js/main.30bc46da.js",
-    "static/media/math_image.svg": "/Math-magician/static/media/math_image.ecf1aa33fee9b4eaf66a4d8dfb9b6f3d.svg",
-    "static/media/quote_image.svg": "/Math-magician/static/media/quote_image.079aa8b64b6d57c2e3c7946328031d3d.svg",
-    "index.html": "/Math-magician/index.html",
-    "main.fa83fc33.css.map": "/Math-magician/static/css/main.fa83fc33.css.map",
-    "main.30bc46da.js.map": "/Math-magician/static/js/main.30bc46da.js.map"
+    "main.css": "./static/css/main.ceae954b.css",
+    "main.js": "./static/js/main.cd389434.js",
+    "static/media/math_image.svg": "./static/media/math_image.0ae9a412f2ac94b27f9ec4b8d3dd1fe0.svg",
+    "static/media/quote_image.svg": "./static/media/quote_image.079aa8b64b6d57c2e3c7946328031d3d.svg",
+    "index.html": "./index.html",
+    "main.ceae954b.css.map": "./static/css/main.ceae954b.css.map",
+    "main.cd389434.js.map": "./static/js/main.cd389434.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa83fc33.css",
-    "static/js/main.30bc46da.js"
+    "static/css/main.ceae954b.css",
+    "static/js/main.cd389434.js"
   ]
 }

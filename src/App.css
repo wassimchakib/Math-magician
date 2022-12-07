@@ -134,6 +134,93 @@ header h1 {
   grid-area: 6/1/6/3;
 }
 
+/*==============================*\
+          Home
+\*==============================*/
+
+.home {
+  margin-top: 10rem;
+}
+
+.home__content {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.home__content ul {
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+
+.home__content li {
+  border-left: none;
+  padding-left: 1rem;
+
+}
+
+.home__content li::before {
+  content: "•";
+  color: #f5913e;
+  padding-right: 1rem;
+}
+
+.home__image {
+  width: 50%;
+}
+
+/*==============================*\
+          Quote
+\*==============================*/
+
+.quote {
+  margin-top: 10rem;
+}
+
+.quote__description {
+  font-size: 3rem;
+  border-left: 1rem solid #ff5c0b;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.quote__description p {
+  font-style: italic;
+}
+
+.quote__description span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.quote__description span::before {
+  content: '-';
+  font-weight: bold;
+  color: #000;
+}
+
+.quote__description::before {
+  content: '';
+  display: block;
+  top: -7rem;
+  left: -2rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 52px;
+  width: 66px;
+  transform: scale(0.8);
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI1MXB4IiB2aWV3Qm94PSIwIDAgNjQgNTEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU3LjEgKDgzMDg4KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5yZXZpc2VkcXVvdGVzdmdfYmxvZzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJQYWdlLS0tQmxvZyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkJsb2ctQXJ0aWNsZS1QYWdlLVJldmlzZWQtRGVza3RvcCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc5NS4wMDAwMDAsIC0xNTE1LjAwMDAwMCkiIGZpbGw9IiNGRjVDMEIiPgogICAgICAgICAgICA8ZyBpZD0icmV2aXNlZHF1b3Rlc3ZnX2Jsb2ciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc5NS4wMDAwMDAsIDE1MTUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTUuOTU1NTA4LDUwLjQgQzEyLjQwODQ1NDUsNTAuNCA5LjQ3MzU4Mjg5LDQ5LjU1MzE1OTYgNy4xNDY3Mzc5Nyw0Ny44NTUzNzQ2IEM0LjgxOTg5MzA1LDQ2LjE2MDMyNTcgMy4wNDcwNTg4Miw0My45MTUzMDk0IDEuODI4MjM1MjksNDEuMTI0NDMgQzAuNjA4MDI2NzM4LDM4LjMzMzU1MDUgMCwzNS4yNDMwNjE5IDAsMzEuODQ4ODU5OSBDMCwyNy4zNjI5MzE2IDAuOTE0MTE3NjQ3LDIzLjAzOTgwNDYgMi43NDIzNTI5NCwxOC44Nzk0Nzg4IEM0LjU3MDU4ODI0LDE0LjcyMTg4OTMgNy4wODk5NTE4NywxMC45OTkzNDg1IDEwLjMwNDU5ODksNy43MTU5NjA5MSBDMTMuNTE2NDc1OSw0LjQzMjU3MzI5IDE3LjE3Mjk0NjUsMS44NjE5NTQ0IDIxLjI3NDAxMDcsMCBMMzEuMDgsNy43MTU5NjA5MSBDMjguMDg4MzQyMiw4LjkyMTIzNzc5IDI1LjM0NTk4OTMsMTAuMzk4NzYyMiAyMi44NTI5NDEyLDEyLjE0ODUzNDIgQzIwLjM1OTg5MywxMy45MDEwNDIzIDE4LjIyNTU2NjgsMTUuODcxMDc0OSAxNi40NTQxMTc2LDE4LjA1ODYzMTkgQzE0LjY4MTI4MzQsMjAuMjQ4OTI1MSAxMy40MDU2NzM4LDIyLjQ5MTIwNTIgMTIuNjMxNDQzOSwyNC43ODk1NzY1IEwxMy40NjI0NTk5LDI1LjI4MjA4NDcgQzE0LjAxNjQ3MDYsMjQuOTUzNzQ1OSAxNC42ODEyODM0LDI0LjY1NDEzNjggMTUuNDU2ODk4NCwyNC4zNzkxNTMxIEMxNi4yMzExMjgzLDI0LjEwNjkwNTUgMTcuMzQwNTM0OCwyMy45Njg3Mjk2IDE4Ljc4MDk2MjYsMjMuOTY4NzI5NiBDMjAuNTUyNDExOCwyMy45Njg3Mjk2IDIyLjMyNjYzMSwyNC40MzUyNDQzIDI0LjA5OTQ2NTIsMjUuMzY0MTY5NCBDMjUuODcwOTE0NCwyNi4yOTU4MzA2IDI3LjM2Njc0MzMsMjcuNjYyNTQwNyAyOC41ODY5NTE5LDI5LjQ2ODQwMzkgQzI5LjgwNTc3NTQsMzEuMjc0MjY3MSAzMC40MTUxODcyLDMzLjU0NjY0NSAzMC40MTUxODcyLDM2LjI4MTQzMzIgQzMwLjQxNTE4NzIsMzkuMjM2NDgyMSAyOS43NTAzNzQzLDQxLjc1NTExNCAyOC40MjA3NDg3LDQzLjgzMzIyNDggQzI3LjA5MTEyMyw0NS45MTQwNzE3IDI1LjMxNjkwMzcsNDcuNTI3MDM1OCAyMy4xMDIyNDYsNDguNjc2MjIxNSBDMjAuODg0ODE4Miw0OS44MjU0MDcyIDE4LjUwMjU3MjIsNTAuNCAxNS45NTU1MDgsNTAuNCIgaWQ9IkZpbGwtMSI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ4LjcxNTUwOCw1MC40IEM0NS4xNjg0NTQ1LDUwLjQgNDIuMjMzNTgyOSw0OS41NTMxNTk2IDM5LjkwNjczOCw0Ny44NTUzNzQ2IEMzNy41Nzk4OTMsNDYuMTYwMzI1NyAzNS44MDcwNTg4LDQzLjkxNTMwOTQgMzQuNTg4MjM1Myw0MS4xMjQ0MyBDMzMuMzY4MDI2NywzOC4zMzM1NTA1IDMyLjc2LDM1LjI0MzA2MTkgMzIuNzYsMzEuODQ4ODU5OSBDMzIuNzYsMjcuMzYyOTMxNiAzMy42NzQxMTc2LDIzLjAzOTgwNDYgMzUuNTAyMzUyOSwxOC44Nzk0Nzg4IEMzNy4zMzA1ODgyLDE0LjcyMTg4OTMgMzkuODQ5OTUxOSwxMC45OTkzNDg1IDQzLjA2NDU5ODksNy43MTU5NjA5MSBDNDYuMjc2NDc1OSw0LjQzMjU3MzI5IDQ5LjkzMjk0NjUsMS44NjE5NTQ0IDU0LjAzNDAxMDcsMCBMNjMuODQsNy43MTU5NjA5MSBDNjAuODQ4MzQyMiw4LjkyMTIzNzc5IDU4LjEwNTk4OTMsMTAuMzk4NzYyMiA1NS42MTI5NDEyLDEyLjE0ODUzNDIgQzUzLjExOTg5MywxMy45MDEwNDIzIDUwLjk4NTU2NjgsMTUuODcxMDc0OSA0OS4yMTQxMTc2LDE4LjA1ODYzMTkgQzQ3LjQ0MTI4MzQsMjAuMjQ4OTI1MSA0Ni4xNjU2NzM4LDIyLjQ5MTIwNTIgNDUuMzkxNDQzOSwyNC43ODk1NzY1IEw0Ni4yMjI0NTk5LDI1LjI4MjA4NDcgQzQ2Ljc3NjQ3MDYsMjQuOTUzNzQ1OSA0Ny40NDEyODM0LDI0LjY1NDEzNjggNDguMjE2ODk4NCwyNC4zNzkxNTMxIEM0OC45OTExMjgzLDI0LjEwNjkwNTUgNTAuMTAwNTM0OCwyMy45Njg3Mjk2IDUxLjU0MDk2MjYsMjMuOTY4NzI5NiBDNTMuMzEyNDExOCwyMy45Njg3Mjk2IDU1LjA4NjYzMSwyNC40MzUyNDQzIDU2Ljg1OTQ2NTIsMjUuMzY0MTY5NCBDNTguNjMwOTE0NCwyNi4yOTU4MzA2IDYwLjEyNjc0MzMsMjcuNjYyNTQwNyA2MS4zNDY5NTE5LDI5LjQ2ODQwMzkgQzYyLjU2NTc3NTQsMzEuMjc0MjY3MSA2My4xNzUxODcyLDMzLjU0NjY0NSA2My4xNzUxODcyLDM2LjI4MTQzMzIgQzYzLjE3NTE4NzIsMzkuMjM2NDgyMSA2Mi41MTAzNzQzLDQxLjc1NTExNCA2MS4xODA3NDg3LDQzLjgzMzIyNDggQzU5Ljg1MTEyMyw0NS45MTQwNzE3IDU4LjA3NjkwMzcsNDcuNTI3MDM1OCA1NS44NjIyNDYsNDguNjc2MjIxNSBDNTMuNjQ0ODE4Miw0OS44MjU0MDcyIDUxLjI2MjU3MjIsNTAuNCA0OC43MTU1MDgsNTAuNCIgaWQ9IkZpbGwtMS1Db3B5Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+}
+
+.quote__image {
+  width: 50%;
+}
+
+
+
 @media screen and (max-width: 720px) {
 /*==============================*\
           Reset Mobile
@@ -154,6 +241,7 @@ header h1 {
 /*==============================*\
           Header Mobile
 \*==============================*/
+
   header h1 {
     font-size: 3rem;
     text-align: center;
@@ -162,6 +250,7 @@ header h1 {
 /*==============================*\
           Calculator Mobile
 \*==============================*/
+
   .calculator__title {
     width: 100%;
     text-align: center;
@@ -172,4 +261,55 @@ header h1 {
     width: 100%;
     height: 30vh;
   }
+
+/*==============================*\
+          Home Mobile
+\*==============================*/
+
+  .home {
+    margin-top: 2rem;
+  }
+
+  .home__content {
+    order: 2;
+    font-size: 2rem;
+  }
+
+  .home__content ul {
+    font-size: 2rem;
+  }
+
+  .home__image {
+    width: 100%;
+    order: 1;
+  }
+
+/*==============================*\
+          Quote Mobile
+\*==============================*/
+
+.quote {
+  margin-top: 2rem;
+}
+
+.quote__description {
+  font-size: 2rem;
+  padding-left: 2rem;
+  border-left-width: 0.5rem;
+  order: 2;
+}
+
+.quote__description::before {
+  transform: scale(0.5);
+  top: -5rem;
+}
+
+.quote__image {
+  width: 80%;
+}
+
+.quote .container {
+  gap: 10rem;
+}
+
 }

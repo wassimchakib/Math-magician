@@ -80,6 +80,7 @@
 
 - [Link1](https://wassimchakib-math-magicians.netlify.app)
 - [Link2](https://math-magicians-vn5k.onrender.com)
+- [Link3](https://math-magician-khaki.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

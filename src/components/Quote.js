@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Header from './header/Header';
 import quoteImg from '../assets/quote_image.svg';
 
@@ -65,14 +65,10 @@ const quotes = [
 ];
 
 const Quote = () => {
-  const [randomNumber, setRandomNumber] = useState(
+  const [randomNumber] = useState(
     Math.floor(Math.random() * 9),
   );
 
-  useEffect(() => {
-    const randomNumber = Math.floor(Math.random() * 9);
-    setRandomNumber(randomNumber);
-  }, []);
   return (
     <>
       <Header />
